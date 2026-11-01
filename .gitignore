@@ -1,0 +1,32 @@
+# --- Secrets et configuration personnelle : ne JAMAIS les versionner ---
+.env
+.env.*
+*.local
+*.key
+*.pem
+secrets.*
+config.local.*
+
+# --- Fichiers Roblox Studio (binaires lourds, le code vit dans src/) ---
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+*.rbxl.lock
+*.rbxlx.lock
+
+# --- Dépendances et outils ---
+Packages/
+ServerPackages/
+DevPackages/
+sourcemap.json
+node_modules/
+
+# --- Éditeur et système ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
