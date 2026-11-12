@@ -43,16 +43,16 @@ Faits dans Studio avec une vraie partie :
 
 ## 3. Tests multijoueur
 
-Test fait dans Studio avec 2 clients et 1 serveur (*Test → Serveur et clients*) :
+Tests faits dans Studio avec 1 serveur et 2 à 5 clients (*Test → Serveur et clients*, puis *Ajouter des clients*) :
 
 - [x] Les deux clients voient la même vague, le même nombre de zombies et le même état des joueurs
 - [x] Joueur à terre avec un coéquipier proche : relevé en 2,9 s, avec 50 PV
 - [x] Joueur à terre sans aide : mort après 25,3 s, il ne revient pas, la partie continue pour l'autre
 - [x] Dernier joueur debout à terre : défaite chez tous (0,1 s après), puis nouvelle partie propre (100 PV, pistolet, 0 kill)
 - [x] Un joueur quitte en cours de partie : l'autre continue normalement
-- [ ] Un joueur quitte à terre puis revient : il ne doit pas réapparaître avant la fin de la partie
-- [ ] Un 5ᵉ joueur est refusé
-- [ ] Parties à 3 et 4 joueurs
+- [ ] Un joueur quitte à terre puis revient : il ne doit pas réapparaître avant la fin de la partie (code relu, mais pas testable seul dans Studio : chaque client ajouté reçoit un nouveau compte, à tester avec un ami)
+- [x] Parties à 3 et 4 joueurs (12 novembre) : tous en vie au départ, état de l'équipe visible dans l'interface, 9 zombies à la vague 1 avec 3 joueurs et 11 avec 4 (4 en solo), défaite d'équipe puis nouvelle partie avec les 4 joueurs
+- [x] Un 5ᵉ joueur est refusé (12 novembre) : il est ajouté puis retiré aussitôt, les 4 autres restent en vie et la partie continue
 - [ ] Test avec des joueurs distants (latence réelle)
 
 ## 4. Prochaines étapes
