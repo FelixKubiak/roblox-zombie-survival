@@ -72,7 +72,7 @@ local function addLampPost(parent, position)
 	})
 	local light = Instance.new("PointLight")
 	light.Range = 42
-	light.Brightness = 2
+	light.Brightness = 1.1 -- assez doux pour ne pas surexposer les zombies
 	light.Color = Color3.fromRGB(255, 214, 140)
 	light.Parent = bulb
 end
@@ -100,7 +100,7 @@ local function addCampfire(parent, position)
 	fire.Parent = flame
 	local light = Instance.new("PointLight")
 	light.Range = 30
-	light.Brightness = 2.5
+	light.Brightness = 1.4
 	light.Color = Color3.fromRGB(255, 150, 70)
 	light.Parent = flame
 end
